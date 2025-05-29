@@ -20,6 +20,8 @@
             View btnGoCart     = sheetView.findViewById(R.id.btnGoCart);
             View btnGoInventory = sheetView.findViewById(R.id.btnGoInventario);
             View btnLogout     = sheetView.findViewById(R.id.btnLogout);
+            View btnReport = sheetView.findViewById(R.id.buttonReportIssue);
+            View btnViewIssues = sheetView.findViewById(R.id.buttonViewIssues);
 
             // Si idPartida es nulo (estás en el menú principal), ocultamos todo excepto "Cerrar sesión"
             if (idPartida == null) {
@@ -63,6 +65,16 @@
                 Intent intent = new Intent(context, LoginActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 context.startActivity(intent);
+                bottomSheetDialog.dismiss();
+            });
+
+            btnReport.setOnClickListener(v -> {
+                context.startActivity(new Intent(context, ReportIssueActivity.class));
+                bottomSheetDialog.dismiss();
+            });
+
+            btnViewIssues.setOnClickListener(v -> {
+                context.startActivity(new Intent(context, IssueListActivity.class));
                 bottomSheetDialog.dismiss();
             });
 

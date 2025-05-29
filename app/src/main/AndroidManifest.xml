@@ -65,5 +65,13 @@
         <activity
             android:name=".PartidaActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".ReportIssueActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".IssueListActivity"
+            android:exported="true" />
     </application>
 </manifest>

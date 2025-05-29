@@ -50,6 +50,25 @@
         android:scaleType="fitCenter"
         android:src="@drawable/cart"
         android:layout_marginBottom="20dp" />
+    <Button
+        android:id="@+id/buttonReportIssue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar denuncia"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/buttonViewIssues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver denuncias"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
 
     <!-- Botón Cerrar Sesión -->
     <ImageButton
@@ -61,4 +80,5 @@
         android:src="@drawable/turn_off"
         android:contentDescription="Cerrar sesión"
         android:layout_marginTop="20dp" />
+
 </LinearLayout>
